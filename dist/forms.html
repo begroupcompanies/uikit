@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bundle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+          type="text/css"/>
+</head>
+<body>
+<main>
+    <header class="navbar navbar-dark sticky-top p-0 shadow">
+        <div>
+            <button class="navbar-toggler d-md-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ms-2" href="#">Beseed</a>
+        </div>
+    </header>
+    <div>
+        <nav id="sidebarMenu" class="sidebar">
+            <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" aria-current="page">
+                        <i class="bi bi-menu-button-wide"></i> Кнопки
+                    </a>
+                </li>
+                <li>
+                    <a href="table.html" class="nav-link">
+                        <i class="bi bi-table"></i> Таблицы
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html" class="nav-link active">
+                        <i class="bi bi-code-slash"></i> Формы
+                    </a>
+                </li>
+                <li>
+                    <a href="https://icons.getbootstrap.com/" target="_blank" class="nav-link">
+                        <i class="bi bi-bag"></i> Картинки
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="ms-sm-auto pt-md-4 pt-2">
+            <div class="main-content">
+                <div class="container">
+                    <div class="row mb-md-4 mb-2">
+                        <div class="col">
+                            <h2>Формы</h2>
+                        </div>
+                    </div>
+                    <div class="row mb-md-4 mb-2">
+                        <div class="col">
+                            <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select mb-2" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-md-4 mb-2">
+                        <div class="col">
+                            <input class="form-control form-control-lg mb-2" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                            <input class="form-control mb-2" type="text" placeholder="Default input" aria-label="default input example">
+                            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                        </div>
+                    </div>
+                    <div class="row mb-md-4 mb-2">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Default file input example</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                                <input class="form-control" type="file" id="formFileDisabled" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFileSm" class="form-label">Small file input example</label>
+                                <input class="form-control form-control-sm" id="formFileSm" type="file">
+                            </div>
+                            <div>
+                                <label for="formFileLg" class="form-label">Large file input example</label>
+                                <input class="form-control form-control-lg" id="formFileLg" type="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

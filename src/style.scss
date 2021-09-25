@@ -1,0 +1,111 @@
+$primary: #3598dc;
+$success: #32c5d2;
+
+$input-border-radius: 0;
+$input-border-radius-sm: 0;
+$input-border-radius-lg: 0;
+$component-active-bg: #36c6d3;
+
+$form-select-border-radius: 0;
+
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+
+$pagination-border-radius: 0;
+
+@import "~bootstrap";
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+header {
+  height: 80px;
+  background-color: #2b3643;
+
+  .navbar-toggler {
+    border-color: transparent !important;
+    &:focus {
+      box-shadow: unset !important;
+    }
+  }
+}
+
+.main-content {
+  margin-left: 200px;
+
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  background-color: #364150;
+  width: 200px;
+  overflow: auto;
+
+  @include media-breakpoint-down(md) {
+    width: 75%;
+
+    &.collapsing {
+      left: -75%;
+      transition: height 0s ease;
+    }
+
+    &.show {
+      left: 0;
+      transition: left 300ms ease-in-out;
+    }
+  }
+
+  @extend .d-md-block;
+  @extend .collapse;
+
+  .nav-link {
+    margin-bottom: 13px;
+    color: #b4bcc8;
+    display: flex;
+    align-items: center;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+
+    &:hover{
+      background-color: #2c3542;
+    }
+
+    &.active {
+      background-color: #36c6d3;
+      color: white;
+    }
+
+    .bi {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.btn-primary, .btn-success {
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.table {
+  font-size: 14px;
+
+  td {
+    @extend .align-middle;
+  }
+}
